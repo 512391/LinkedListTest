@@ -1,32 +1,39 @@
 #include<iostream>
 #include "Node.h"
-
+/*
+  author: Jay Williamson
+  date: 12/2/2024
+  this class gives functionality to the node
+ */
 using namespace LinkedList;
 using namespace std;
 
 Node::Node(Student* student)
 {
+  //sets the data
   Node::data = student;
 }
 
 Node* Node::getNext()
 {
+  //returns the next node
   return Node::nextNode;
 }
 
 void Node::setNext(Node* node)
 {
+  //sets the next node
   Node::nextNode = node;
 }
 
 Student* Node::getStudent()
 {
+  //return the data as a student
   return Node::data;
 }
 
 Node::~Node()
 {
-  delete Node::nextNode;
+  //deletes the data
   delete Node::data;
-  cout << "destroyed node";
 }

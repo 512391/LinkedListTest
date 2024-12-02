@@ -6,6 +6,5 @@ using namespace std;
 
 Student::Student()
 {
-  cout << "new student";
-  
+  return;  
 }
