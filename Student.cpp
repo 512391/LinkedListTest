@@ -4,8 +4,8 @@
 using namespace LinkedList;
 using namespace std;
 
-Student::Student(int idNum, char firstInitial)
+Student::Student()
 {
-  Student::id = idNum;
-  Student::name = firstInitial;
+  cout << "new student";
+  
 }

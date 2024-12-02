@@ -26,5 +26,7 @@ Student* Node::getStudent()
 
 Node::~Node()
 {
+  delete Node::nextNode;
+  delete Node::data;
   cout << "destroyed node";
 }
